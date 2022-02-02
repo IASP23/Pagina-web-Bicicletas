@@ -1,0 +1,274 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+section {
+    padding: 20px;
+}
+
+section:nth-child(odd) {
+    background-color: #3d3e47;
+    color: white;
+}
+
+.imagen_fondo {
+    background-image: url(img/fondo_imagen.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 25px;
+}
+
+.imagen_local {
+    padding: 10px;
+    border-radius: 20px;
+    height: 10em;
+    width: 300px;
+}
+
+.imagen_local:hover {
+    opacity: 0.8;
+    transform: scale(1);
+}
+
+.imagen {
+    padding: 7px;
+    border-radius: 20px;
+    height: 10em;
+    width: 10em;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen:hover {
+    opacity: 0.5;
+    transform: scale(auto);
+}
+
+.descripcion_local {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+}
+
+h2,
+span {
+    font-family: 'Geostar Fill', cursive;
+    padding: 15px;
+    color: rgb(18, 182, 223);
+}
+
+article {
+    padding: 30px;
+}
+
+p {
+    padding: 10px;
+}
+
+h1 {
+    font-family: 'Rye', cursive;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.piePagina {
+    text-align: center;
+}
+
+a {
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px;
+}
+
+.boton {
+    color: black;
+    display: inline-block;
+    font-size: 1em;
+    margin: 20px;
+    padding: 10px 0px;
+    text-align: center;
+    width: 200px;
+    border-color: rgb(23, 138, 153);
+    border-width: 10px;
+    border-style: double;
+    cursor: pointer;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+.boton:hover {
+    border-color: #0b5c7c;
+    color: black;
+    background: #b8f3fd;
+    box-shadow: 0px 0.5em 0.5em -0.4em rgba(0, 217, 255, 0.926);
+    transform: translateY(-0.25em);
+}
+
+@media(max-width:600px) {
+    .panel {
+        flex-direction: column;
+    }
+    section {
+        flex-direction: column;
+    }
+    section:last-child {
+        flex-direction: column;
+    }
+    .imagen {
+        flex-direction: column;
+    }
+}
